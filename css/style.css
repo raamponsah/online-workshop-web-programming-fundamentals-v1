@@ -38,7 +38,7 @@ linkedin: https://www.linkedin.com/in/raphaelamponsah/
 
 
 body{
-  min-height: 100%;
+  min-height: 100vh;
 
 }
 
@@ -90,7 +90,7 @@ header ul li a{
 main{
   display: grid;
   grid-template-columns: 4fr 4fr;
-  min-height:100%;
+  height:auto;
 
 }
 
@@ -101,7 +101,7 @@ section{
 
 /*Section: Left Main Styles*/
 section#left-main{
-  height: 100vh;
+  height: 100%;
   bottom: 0;
   position: relative;
 
@@ -176,8 +176,8 @@ section#left-main aside.statistics div h4, span{
 section.project-statistics{
   background: rgba(35, 34, 34, 0.97);
   color: white;
-  padding: 2rem 15rem;
-  min-height: 232px;
+  padding: 4rem 15rem;
+  min-height: auto;
   margin-top: auto; /*This is the magic*/
   display: grid;
   gap:10px;
@@ -211,10 +211,12 @@ section.project-statistics section:last-child ul{
 section.project-statistics ul li{
   border-bottom: 0.5px solid rgba(235, 235, 235, 0.91);
 }
+
 .dot{
   color: var(--orange);
   font-size: 4rem;
 }
+
 section.project-statistics section:last-child ul li {
   display:flex;
   justify-content: space-between;
@@ -236,16 +238,15 @@ span.tag-style{
 /* Section: Right Main styles */
 section#right-main{
   background-image: url(../img/me.jpg); /*You can replace this image with your own :)*/
-  height: 100vh;
-  bottom: 0;
+  height: 100%;
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding:4rem 15rem ;
+  bottom: 0;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
+
+
 }
+
 
 
 
